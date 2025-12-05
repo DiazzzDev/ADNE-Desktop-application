@@ -1,80 +1,82 @@
-# Empresa laboral ADNE - Proyecto PTC
+# ADNE Clinical Management System – 2024
 
-El sistema de administración de la clínica ADNE tiene como objetivo principal gestionar de forma integral las operaciones diarias de la clínica, permitiendo a los profesionales a llevar un control exhaustivo de la información relacionada con los pacientes y los servicios prestados, todo en un entorno intuitivo y seguro.
+The ADNE Clinical Management System is an integrated desktop application designed to manage daily clinical operations, including patient records, appointments, schedules, employee management, and administrative workflows.
+The system focuses on data security, efficiency, and ease of use, providing professionals with reliable tools to deliver high-quality patient care.
 
-Con el sistema ADNE, los profesionales pueden agilizar procesos, mejorar la organización de la información y acceder de manera sencilla a los datos esenciales para ofrecer una atención de calidad. Este software ha sido desarrollado para adaptarse a las necesidades del profesional, brindando flexibilidad y eficiencia en cada tarea.
+This project was developed by a team of five contributors as part of the PTC Project – Instituto Técnico Ricaldone (2024).
 
-## ¿Qué tecnologias se utilizan?
-- Visual Studio 2022 - Editor de texto principal del programa, es donde fué creado orignalmente y programado
-- Windows Forms - Framework utilizado para la elaboración de Interfaces, a su vez en la elaboración del proyecto como un sistema de gestión
-- Bunifu - Framework utilizado como herramienta de diseño a la hora de la elaboración de las Interfaces
-- Visual Studio Code - Editor de texto principal donde ha sido creada la página web
-- Figma - Herramienta de formato a la hora de diseñar las Interfaces del sistema (bocetos iniciales)
-- Pixlr - Herramienta de edicion de imagenes
-- Itextsharp - Libería utilizada para la elaboración de reportes sobre la gestión de pacientes
-- Aspose.Email - Libería utilizada para la verificación de correos electrónicos existentes referente a su dominio
-- Security Criptography AES - Libería utilizada para la encriptación de contraseñas de los Usuarios y encriptación de variables dentro de SQL Server (archivo XML)
-- Xml Worker - Libería utilizada para la elaboración de variables iniciales del sistema a la hora de conectarse a la base de datos
-- SMTP Client - Libería utilizada para el envío de correos como métodos de recuperación de contraseñas
-- Net Mail.net - Libería utilizada para la elaboración de correos (Titulo, Asunto y Cuerpo)
-- Adobe Photoshop CS6 - Editor de fotografías
-- SQL Server - Gestor de bases de datos principal donde se almacena toda la información registrada dentro del sistema (Empleados, pacientes, etc.)
++------------------------------------------------------------+
+|                       Presentation Layer                   |
+|            (Windows Forms + Bunifu UI Framework)           |
++------------------------------------------------------------+
+|                      Business Logic Layer                  |
+|  Employee management · Appointment handling · Validation   |
++------------------------------------------------------------+
+|                     Data Access Layer                      |
+|           Microsoft SQL Server · XML Config Files          |
++------------------------------------------------------------+
+|                       Security Layer                       |
+|            AES Encryption · Email Verification             |
++------------------------------------------------------------+
 
-  # ¿Qué Características tiene el Sistema Administrativo ADNE 2024?
- ##   Apartado de Gestión de Pacientes:
-- Registro y mantenimiento de perfiles: Permite crear, modificar y consultar registros detallados de pacientes, incluyendo información demográfica, médica, social y de contacto.
-- Historial clínico: Facilita la gestión y consulta del historial clínico completo del paciente, desde el primer contacto hasta las últimas actualizaciones.
+# Features
 
-- Diagnóstico psicosocial: Permite registrar y visualizar el diagnóstico psicosocial de cada paciente, incluyendo evaluaciones y resultados.
+## Patient Management
+* Create, update, and maintain full patient profiles
+* Store clinical information following the privacy laws from El Salvador such as the law 'Grow Together'
+* Manage complete clinical history
+* Generate electronic patient files with attachments for data portability
 
-- Generación de expedientes: Automatiza la creación de expedientes médicos electrónicos, incluyendo la incorporación de documentos escaneados y firmas digitales.
+## Appointment & Scheduling
+* Full calendar view with editing capabilities
+* Appointment search and filtering
+* Automatic reminders for the patients via email
+* Appointment statistics and reports, helping the ADNE company grow
 
-## Apartado de Agenda y Citas:
+## Employee & Role Management
+* Employee registration and data storage
+* Role-based access control to keep separated the patients privacy info with the other professionals that arent administrators
+* Work schedules and role permissions, 
 
-- Calendario de citas: Ofrece una interfaz visual intuitiva para programar, modificar y cancelar citas.
+## Administrative Tools
+* System customization options
+* Dark mode support
+* Notification and alert settings
+* PDF report generation for making more effective the patients track
 
-- Visualización de citas: Permite filtrar y visualizar las citas por diferentes criterios (fecha, paciente, profesional, etc.).
+# Authors
 
-- Recordatorios: Envía notificaciones automáticas a los profesionales sobre citas próximas.
+Edwin Díaz - 20220281@ricaldone.edu.sv | ed.diaz.hz@gmail.com
+* User interfaces
+* Patients history
+* 'Remember me'
+* Dashboard module
+* Appointments module
+* PDF generation for patients procedures
+* Email reminder to patients
+* Responsiveness (User Control responsiveness achieved)
+* Database sub-manager
 
-- Estadísticas de citas: Genera gráficos y reportes que muestran el número de citas atendidas, pendientes y canceladas.
+Kevin Castro - 20210033@ricaldone.edu.sv
+* Employee module
+* Validations
+* Documentation
 
- ## Apartado de Gestión de Profesionales:
+Jorge Pérez - 20240012@ricaldone.edu.sv | @jorPerez11
+* Backend logic
+* Dark mode
+* Patients module
+* Configuration module and user interface
 
-- Registro de empleados: Permite gestionar la información personal y laboral de todos los empleados del centro.
+Juan Rodríguez - 20240158@ricaldone.edu.sv | @sanguchitoou
+* Core Backend logic
+* Encryption with AES-256
+* Login
+* Database manager
+* Documentation
 
-- Asignación de roles y permisos: Define los roles y permisos de acceso de cada usuario al sistema.
-
-- Gestión de horarios: Permite crear y gestionar los horarios de trabajo de los empleados.
-
-## Apartado de Configuración:
-
-- Personalización: Permite personalizar la apariencia y configuración del sistema según las necesidades del usuario.
-
-- Modo oscuro: Ofrece una opción de interfaz con fondo oscuro para reducir la fatiga visual.
-
-- Configuración de notificaciones: Permite configurar los tipos de notificaciones que se envían a los usuarios.
-
-  # Autores
-- Castro Domínguez Kevin Eduardo
-
-Correo de contacto personal   – 20210033@ricaldone.edu.sv
-
-- Díaz Henríquez Edwin Adrián
-  
-Correo de contacto personal   - 20220281@ricaldone.edu.sv
-
-- Orellana Sandoval Andrée Alessandro
-  
-Correo de contacto personal   - 20240012@ricaldone.edu.sv
-
-- Pérez Santos Jorge Andrés
-  
-Correo de contacto personal   - 20240057@ricaldone.edu.sv
-
-- Rodríguez Funes Juan Carlos
-  
-Correo de contacto personal   - 20240158@ricaldone.edu.sv
-
-# Consultas sobre el sistema:
-## Adnekids2024@gmail.com
+Andrée Orellana - 20240012@ricaldone.edu.sv | @KeruChips
+* Website for ADNE adnekids.com deployed on Netlify (No avaliable)
+* Calendar module (Coauthored with Edwin Díaz)
+* Testing
+* Documentation
