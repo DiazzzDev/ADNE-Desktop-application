@@ -5,20 +5,6 @@ The system focuses on data security, efficiency, and ease of use, providing prof
 
 This project was developed by a team of five contributors as part of the PTC Project – Instituto Técnico Ricaldone (2024).
 
-+------------------------------------------------------------+
-|                       Presentation Layer                   |
-|            (Windows Forms + Bunifu UI Framework)           |
-+------------------------------------------------------------+
-|                      Business Logic Layer                  |
-|  Employee management · Appointment handling · Validation   |
-+------------------------------------------------------------+
-|                     Data Access Layer                      |
-|           Microsoft SQL Server · XML Config Files          |
-+------------------------------------------------------------+
-|                       Security Layer                       |
-|            AES Encryption · Email Verification             |
-+------------------------------------------------------------+
-
 # Features
 
 ## Patient Management
@@ -57,7 +43,14 @@ Edwin Díaz - 20220281@ricaldone.edu.sv | ed.diaz.hz@gmail.com
 * Responsiveness (User Control responsiveness achieved)
 * Database sub-manager
 
-Kevin Castro - 20210033@ricaldone.edu.sv
+Juan Rodríguez - 20240158@ricaldone.edu.sv | @sanguchitoou
+* Core Backend logic
+* Encryption with AES-256
+* Login
+* Database manager
+* Documentation
+
+Kevin Castro
 * Employee module
 * Validations
 * Documentation
@@ -67,13 +60,6 @@ Jorge Pérez - 20240012@ricaldone.edu.sv | @jorPerez11
 * Dark mode
 * Patients module
 * Configuration module and user interface
-
-Juan Rodríguez - 20240158@ricaldone.edu.sv | @sanguchitoou
-* Core Backend logic
-* Encryption with AES-256
-* Login
-* Database manager
-* Documentation
 
 Andrée Orellana - 20240012@ricaldone.edu.sv | @KeruChips
 * Website for ADNE adnekids.com deployed on Netlify (No avaliable)
